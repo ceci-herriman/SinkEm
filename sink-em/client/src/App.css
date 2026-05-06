@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+.admin-container {
+    padding: 2rem;
+    font-family: system-ui, sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.stats-overview {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.stat-box {
+    flex: 1;
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.stat-box.error {
+    background: #ffe5e5;
+    color: #b00020;
+}
+
+.stat-box h2 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-box p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-color: black;
+}
+
+.card h3 {
+    margin-bottom: 0.75rem;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.key {
+    font-weight: 500;
+}
+
+.value {
+    color: #555;
+}
+
+.loading {
+    padding: 2rem;
+    text-align: center;
+}
+

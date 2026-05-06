@@ -9,3 +9,4 @@ createRoot(document.getElementById('root')).render(
   // </StrictMode>,
   <App/> //keep only for dev (other version mounts twice)
 )
+

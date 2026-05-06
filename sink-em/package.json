@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node server.js",
+    "dev": "concurrently \"node gateway/server.js\" \"node game-service/server.js\" \"node matchmaking-service/server.js\"  \"node leaderboard-service/server.js\" \"vite client\"",
     "prod": "NODE_ENV=production node server.js",
     "build": "vite build",
     "lint": "eslint .",
@@ -12,14 +12,19 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
+    "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "express-rate-limit": "^8.3.2",
     "express-ws": "^5.0.2",
+    "http-proxy-middleware": "^3.0.5",
+    "jsonwebtoken": "^9.0.3",
     "mongodb": "^6.20.0",
+    "morgan": "^1.10.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-router-dom": "^7.14.0",
     "tailwindcss": "^4.1.14",
-    "vite-express": "^0.21.1",
     "ws": "^8.18.3"
   },
   "devDependencies": {

@@ -39,7 +39,6 @@ app.use(cors({
 const server = createServer(app)
 
 const retrieveUser = async (username, password) => {
-  //const uri = `mongodb+srv://herrimanceci_db_user:${process.env.DB_PASSWORD}@a3-webware.vn9sgni.mongodb.net/?appName=a3-webware`;
   const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.DB_URL}/?appName=Cluster0`;
   const client = new MongoClient(uri, {
       serverApi: {
